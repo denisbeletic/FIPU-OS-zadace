@@ -1,0 +1,126 @@
+--------------------------------------------------------------------------------------------------------------------------------------
+Zadatak 1
+
+
+1. Provjerite trenutni radni direktorij:
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace$ pwd
+/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace
+
+2. Izlistajte sadržaj trenutnog radnog direktorija:
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace$ ls
+OS_ZADACA1.txt  README.md
+
+3. Napravite novi direktorij vjezba1 i prebacite se u njega:
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace$ mkdir vjezba1 && cd vjezba1
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba1$ 
+
+4. Unutar direktorija vjezba1 napravite novu datoteku README.md:
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba1$ touch README.md && ls
+README.md
+
+5. Vratite se u početni radni direktorij:
+(Nisam 100% siguran ako želite da pomoću ~ idem skroz do početnog direktorija ili samo da se vratim u direktorij u kojem sam
+do sada radio, odnosno FIPU-OS-zadace, pa ću zato oba dva načina napraviti)
+
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba1$ cd ..
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace$ 
+
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace$ cd ~
+denisbeletic@DESKTOP-0QQVIEA:~$ 
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Zadatak 2
+
+1. Napravite praznu datoteku file.txt unutar direktorija vjezba2
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace$ mkdir vjezba2 && cd vjezba2 && touch file.txt
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba2$ ls
+file.txt
+
+2. Kopirajte datoteku file.txt u direktorij vjezba2 i nazovite ju file_copy.txt
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba2$ cp file.txt file_copy.txt
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba2$ ls
+file.txt  file_copy.txt
+
+3. Ispišite sve datoteke unutar direktorija vjezba2
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba2$ ls
+file.txt  file_copy.txt
+
+4. Obrišite datoteku file.txt i vratite se u početni radni direktorij
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba2$ rm file.txt && ls
+file_copy.txt
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba2$ cd ..
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace$ 
+
+5. Pokušajte izbrisati direktorij vjezba2 . Zašto ne možete?
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace$ rmdir vjezba2
+rmdir: failed to remove 'vjezba2': Directory not empty
+
+-> Ne možemo izbrisati direktorij vjezba2 zato jer nije prazan, u njoj se i dalje nalazi file "file_copy.txt".
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Zadatak 3
+
+1. Napravite novi direktorij vjezba3 i unutar njega direktorij backup
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace$ mkdir vjezba3 && cd vjezba3
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba3$ mkdir backup
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba3$ ls
+backup
+
+2. Unutar direktorija vjezba3 napravite 3 datoteke: notes.txt , todo.txt i script.sh
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba3$ touch notes.txt && touch todo.txt && touch script.sh
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba3$ ls
+backup  notes.txt  script.sh  todo.txt
+
+3. Kopirajte sve datoteke iz direktorija vjezba3 u direktorij backup
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba3$ cp notes.txt backup/ && cp script.sh backup/ && cp todo.txt backup/
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba3$ cd backup/
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba3/backup$ ls
+notes.txt  script.sh  todo.txt
+
+4. Izbrišite samo datoteku script.sh iz direktorija vjezba3 i ispišite sve datoteke
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba3$ rm script.sh && ls
+backup  notes.txt  todo.txt
+
+5. U backup dodajte još jedan direktorij koju ćete imenovati USER varijablom
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba3/backup$ mkdir $USER
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba3/backup$ ls
+denisbeletic  notes.txt  script.sh  todo.txt
+
+6. Premjestite sve datoteke iz direktorija backup u direktorij nazvan varijablom USER
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba3/backup$ mv notes.txt denisbeletic/ && mv script.sh denisbeletic/ && mv todo.txt denisbeletic/
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba3/backup$ cd denisbeletic/
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba3/backup/denisbeletic$ ls
+notes.txt  script.sh  todo.txt
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba3/backup/denisbeletic$ cd .. && ls
+denisbeletic
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Zadatak 4
+
+1. Napravite novi direktorij vjezba4 i unutar njega direktorij subfolder
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace$ mkdir vjezba4 && cd vjezba4 && mkdir subfolder
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba4$ ls
+subfolder
+
+2. Unutar direktorija vjezba4 napravite datoteku prema nazivu varijable HOSTNAME
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba4$ touch $HOSTNAME.txt
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba4$ ls
+DESKTOP-0QQVIEA.txt  subfolder
+
+3. Preimenujte novoizrađenu datoteku prema nazivu varijable USER
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba4$ mv DESKTOP-0QQVIEA.txt $USER.txt
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba4$ ls
+denisbeletic.txt  subfolder
+
+4. Premjestite datoteku USER u direktorij subfolder
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba4$ mv denisbeletic.txt subfolder/
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba4$ cd subfolder/
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba4/subfolder$ ls
+denisbeletic.txt
+
+5. Izbrišite datoteku USER koristeći apsolutnu putanju
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba4/subfolder$ rm /mnt/d/FIPU/Kolegiji/2.\ semestar/Operacijski\ sustavi/FIPU-OS-zadace/vjezba4/subfolder/denisbeletic.txt
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba4/subfolder$ ls
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/vjezba4/subfolder$ 
+
+--------------------------------------------------------------------------------------------------------------------------------------
