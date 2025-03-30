@@ -1,0 +1,139 @@
+--------------------------------------------------------------------------------------------------------------------------------------
+Zadatak 1
+
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/OS_2$ mkdir -p vjezba_2/data
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/OS_2$ mkdir -p vjezba_2/backup
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/OS_2$ ls -Rl
+.:
+total 0
+-rwxrwxrwx 1 denisbeletic denisbeletic    0 Mar 30 20:51 OS_ZADACA2.txt
+drwxrwxrwx 1 denisbeletic denisbeletic 4096 Mar 30 22:04 vjezba_2      
+
+./vjezba_2:
+total 0
+drwxrwxrwx 1 denisbeletic denisbeletic 4096 Mar 30 22:04 backup        
+drwxrwxrwx 1 denisbeletic denisbeletic 4096 Mar 30 22:07 data
+
+./vjezba_2/backup:
+total 0
+
+./vjezba_2/data:
+total 0
+
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/OS_2$ cd vjezba_2/data/ && touch script.js
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/OS_2/vjezba_2/data$ touch style.css
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/OS_2/vjezba_2/data$ touch .env 
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/OS_2/vjezba_2/data$ ls -a
+.  ..  .env  script.js  style.css
+
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/OS_2/vjezba_2/data$ echo 'console.log("Hello, World!")' > script.js
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/OS_2/vjezba_2/data$ echo 'body {background-color: #f0f0f0;}' > style.css
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/OS_2/vjezba_2/data$ echo 'VJEZBE=OS' > .env
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Zadatak 2
+
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/OS_2/vjezba_2/data$ cp -va . ../backup/
+'./style.css' -> '../backup/./style.css'
+'./.env' -> '../backup/./.env'
+'./script.js' -> '../backup/./script.js'
+
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/OS_2/vjezba_2/data$ ls -laS
+total 0
+drwxrwxrwx 1 denisbeletic denisbeletic 4096 Mar 30 22:27 .
+drwxrwxrwx 1 denisbeletic denisbeletic 4096 Mar 30 22:04 ..
+-rwxrwxrwx 1 denisbeletic denisbeletic   34 Mar 30 22:26 style.css
+-rwxrwxrwx 1 denisbeletic denisbeletic   29 Mar 30 22:17 script.js
+-rwxrwxrwx 1 denisbeletic denisbeletic   10 Mar 30 22:26 .env
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Zadatak 3
+
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/OS_2/vjezba_2/data$ rm -fv ./*
+removed './script.js'
+removed './style.css'
+
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/OS_2/vjezba_2/data$ cp -nv ../backup/* ./
+cp: warning: behavior of -n is non-portable and may change in future; use --update=none instead
+'../backup/script.js' -> './script.js'
+'../backup/style.css' -> './style.css'
+
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/OS_2/vjezba_2/data$ ls -Atl1
+total 0
+-rwxrwxrwx 1 denisbeletic denisbeletic 34 Mar 30 22:52 style.css
+-rwxrwxrwx 1 denisbeletic denisbeletic 29 Mar 30 22:52 script.js
+-rwxrwxrwx 1 denisbeletic denisbeletic 10 Mar 30 22:26 .env
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Zadatak 4
+
+Prebacite se u direktorij i napišite sljedeće naredbe:
+
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/FIPU/Kolegiji/2. semestar/Operacijski sustavi/FIPU-OS-zadace/OS_2/vjezba_2/data$ cd /mnt/d/BackupsAll/bez_fipu_backup/
+
+
+1. Izlistaj detaljno sadržaj glavnog direktorija, uključujući sve skrivene datoteke i sortiraj po veličini.
+
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/BackupsAll/bez_fipu_backup$ ls -laS
+total 0
+drwxrwxrwx 1 denisbeletic denisbeletic 4096 Mar 30 23:06 .
+drwxrwxrwx 1 denisbeletic denisbeletic 4096 Mar 30 23:02 ..
+drwxrwxrwx 1 denisbeletic denisbeletic 4096 Mar 30 23:06 Denis_unnamed_file
+drwxrwxrwx 1 denisbeletic denisbeletic 4096 Mar 30 23:06 Epic_games_backup_codes
+drwxrwxrwx 1 denisbeletic denisbeletic 4096 Mar 30 23:02 MoriaBackupOriginalPaks
+
+
+2. Izlistaj detaljno sadržaj glavnog direktorija, bez skrivenih datoteka, sortiraj po veličini i prikaži jedinice
+(KB, MB, GB) uz veličinu datoteka.
+
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/BackupsAll/bez_fipu_backup$ ls -lASh
+total 0
+drwxrwxrwx 1 denisbeletic denisbeletic 4.0K Mar 30 23:06 Denis_unnamed_file
+drwxrwxrwx 1 denisbeletic denisbeletic 4.0K Mar 30 23:06 Epic_games_backup_codes
+drwxrwxrwx 1 denisbeletic denisbeletic 4.0K Mar 30 23:02 MoriaBackupOriginalPaks
+
+
+3. Izlistaj sav sadržaj direktorija (uključujući poddirektorije i njihove datoteke i skrivene datoteke), ispis
+neka bude u boji i sortiran po datumu zadnje izmjene (najnovije na početku).
+
+denisbeletic@DESKTOP-0QQVIEA:/mnt/d/BackupsAll/bez_fipu_backup$ ls -Rltah --color
+.:
+total 0
+drwxrwxrwx 1 denisbeletic denisbeletic 4.0K Mar 30 23:06 Epic_games_backup_codes
+drwxrwxrwx 1 denisbeletic denisbeletic 4.0K Mar 30 23:06 .
+drwxrwxrwx 1 denisbeletic denisbeletic 4.0K Mar 30 23:06 Denis_unnamed_file
+drwxrwxrwx 1 denisbeletic denisbeletic 4.0K Mar 30 23:02 MoriaBackupOriginalPaks
+drwxrwxrwx 1 denisbeletic denisbeletic 4.0K Mar 30 23:02 ..
+
+./Epic_games_backup_codes:
+total 0
+drwxrwxrwx 1 denisbeletic denisbeletic 4.0K Mar 30 23:06  .
+drwxrwxrwx 1 denisbeletic denisbeletic 4.0K Mar 30 23:06  ..
+-rwxrwxrwx 1 denisbeletic denisbeletic  100 Jan 19 23:55 'Epic Games Account Two-Factor backup codes.txt'
+
+./Denis_unnamed_file:
+total 24K
+drwxrwxrwx 1 denisbeletic denisbeletic 4.0K Mar 30 23:06 ..
+drwxrwxrwx 1 denisbeletic denisbeletic 4.0K Mar 30 23:06 .
+-rwxrwxrwx 1 denisbeletic denisbeletic 1.8K Jan 16 19:45 READMEdenisfile.txt
+-rwxrwxrwx 1 denisbeletic denisbeletic  19K Oct 23 23:46 Denis
+
+./MoriaBackupOriginalPaks:
+total 0
+drwxrwxrwx 1 denisbeletic denisbeletic 4.0K Mar 30 23:06 ..
+drwxrwxrwx 1 denisbeletic denisbeletic 4.0K Mar 30 23:06 Paks
+drwxrwxrwx 1 denisbeletic denisbeletic 4.0K Mar 30 23:02 .
+
+./MoriaBackupOriginalPaks/Paks:
+total 13G
+drwxrwxrwx 1 denisbeletic denisbeletic 4.0K Mar 30 23:06 .
+drwxrwxrwx 1 denisbeletic denisbeletic 4.0K Mar 30 23:02 ..
+-rwxrwxrwx 1 denisbeletic denisbeletic  12M Feb 22 11:49 Moria-WindowsNoEditor.utoc
+-rwxrwxrwx 1 denisbeletic denisbeletic  13G Feb 22 11:49 Moria-WindowsNoEditor.ucas
+-rwxrwxrwx 1 denisbeletic denisbeletic 198M Feb 22 11:43 Moria-WindowsNoEditor.pak
+-rwxrwxrwx 1 denisbeletic denisbeletic 1.9M Feb 22 11:43 global.ucas
+-rwxrwxrwx 1 denisbeletic denisbeletic  669 Feb 22 11:43 global.utoc
+
+-> Pustio sam za 3. da budu prikazane jedinice, imam velike datoteke ovdje pa me zanimalo
+
+--------------------------------------------------------------------------------------------------------------------------------------
